@@ -28,5 +28,5 @@ E.g. sample_quiz.txt.converted.xml
 4. On the new screen, at the bottom, click Import button.
 5. Import the local file by following the instructions.
 
-Please raech out to me in case of any issues.
+Please reach out to me in case of any issues.
 Feel free to contribute.
