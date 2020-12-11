@@ -1,0 +1,24 @@
+				<question answerType="single">
+					<title>
+						<![CDATA[1]]>
+					</title>
+					<points>1</points>
+					<correctMsg>
+						<![CDATA[]]>
+					</correctMsg>
+					<incorrectMsg>
+						<![CDATA[]]>
+					</incorrectMsg>
+					<tipMsg enabled="false">
+						<![CDATA[]]>
+					</tipMsg>
+					<category/>
+					<correctSameText>false</correctSameText>
+					<showPointsInBox>false</showPointsInBox>
+					<answerPointsActivated>false</answerPointsActivated>
+					<answerPointsDiffModusActivated>false</answerPointsDiffModusActivated>
+					<disableCorrect>false</disableCorrect>
+                    <answers>
+                    </answers>
+
+				</question>

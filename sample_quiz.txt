@@ -1,0 +1,28 @@
+Sample Title
+
+Q1.	Sample single choice question 1?Q
+a.	Sample answer 1.1
+b.	Sample answer 1.2#
+c.	Sample answer 1.3
+d.	Sample answer 1.4
+
+Q2.	Sample single choice question 2?[single]Q
+a.	Sample answer 2.1
+b.	Sample answer 2.2#
+c.	Sample answer 2.3
+
+Q3.	Sample multiple choice question?[multiple]Q
+a.	Sample answer 3.1
+b.	Sample answer 3.2#
+c.	Sample answer 3.3
+d.	Sample answer 3.4#
+e.	Sample answer 3.5#
+f.	Sample answer 3.6
+
+Q4.	Sample matrix choice question?[matrix]Q
+a.	Sample answer 1.1 > Mapping 1
+b.	Sample answer 1.2 > Mapping 2
+c.	Sample answer 1.3 > Mapping 3
+d.	Sample answer 1.4 > Mapping 4
+
+Q5.	Sample essay question?[essay]Q

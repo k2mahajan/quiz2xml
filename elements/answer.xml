@@ -1,0 +1,8 @@
+						<answer points="__POINTS__" correct="__CORRECT__">
+							<answerText html="false">
+								<![CDATA[__ANSWER__]]>
+							</answerText>
+							<stortText html="false">
+								<![CDATA[__SHORT__]]>
+							</stortText>
+						</answer>
