@@ -22,8 +22,8 @@ def parse_doc(doc_name):
     mode = 'title'
     i = 0
     while i < len(lines):
-        # print(lines[i])
-        if not lines[i] or lines[i] in ['', '\n', '\t']:
+        #print(lines[i])
+        if not lines[i] or lines[i].replace(' ', '').replace('\t', '') in ['', '\n']:
             i += 1
             continue
         if mode == 'title':
@@ -142,6 +142,7 @@ def generate_xml(doc_name):
     post_title_xml.text = get_xml_text(doc_parsed['title'])
 
     qt = 1
+    print('Questions:')
     for qs in doc_parsed['question_sets']:
         qs_xml = ET.parse('elements/question_set.xml')
         qs_xml.getroot().attrib['answerType'] = qs['answer_type']
@@ -167,6 +168,7 @@ def generate_xml(doc_name):
     converted_doc_name =  doc_name + '.converted.xml'
     quiz_root_xml.write(converted_doc_name, encoding='utf-16')
     post_process_xml(converted_doc_name)
+    print(f'Generated XML: {converted_doc_name}')
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
