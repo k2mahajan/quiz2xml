@@ -148,10 +148,10 @@ def generate_xml(doc_name):
         qs_xml.getroot().attrib['answerType'] = qs['answer_type']
         qs_title_xml = qs_xml.find('title')
         qs_title_xml.text = get_xml_text(f'Q{qt}')
-        qt += 1
         question_xml = ET.parse('elements/question.xml')
         question_xml.getroot().text = get_xml_text(qs['question'], bold=True)
-        print(qs['question'])
+        print(f"Q{qt} ({qs['answer_type']}): {qs['question']}")
+        qt += 1
         qs_xml.getroot().append(question_xml.getroot())
         answers_xml = qs_xml.find('answers')
         for ans in qs['answers']:
@@ -168,6 +168,7 @@ def generate_xml(doc_name):
     converted_doc_name =  doc_name + '.converted.xml'
     quiz_root_xml.write(converted_doc_name, encoding='utf-16')
     post_process_xml(converted_doc_name)
+    print(f"Number of questions: {len(doc_parsed['question_sets'])}")
     print(f'Generated XML: {converted_doc_name}')
 
 if __name__ == "__main__":
