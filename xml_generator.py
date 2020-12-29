@@ -15,7 +15,7 @@ answer_types = {
 }
 
 def parse_doc(doc_name):
-    fdoc = open(doc_name)
+    fdoc = open(doc_name, encoding="utf8")
     lines = fdoc.readlines()
     title = None
     question_sets = list()
